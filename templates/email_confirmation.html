@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Welcome to Midiverse Support
+
+Hello {{name}}!
+
+Please confirm your email by clicking on the following link.
+
+confirmation Links : http://{{ domain }}{ % url 'activate' uid64=uid token=token %}
+
+{% endautoescape %}
